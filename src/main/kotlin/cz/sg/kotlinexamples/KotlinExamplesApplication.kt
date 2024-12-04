@@ -1,6 +1,7 @@
 package cz.sg.kotlinexamples
 
-class KotlinExamplesApplication
+import java.nio.charset.Charset
+import java.nio.file.Files
+import java.nio.file.Paths
 
-fun main(args: Array<String>) {
-}
+class KotlinExamplesApplication

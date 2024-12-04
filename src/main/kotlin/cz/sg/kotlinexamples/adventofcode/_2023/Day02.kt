@@ -18,9 +18,7 @@ fun main() {
     Game 10: 4 red, 3 green, 6 blue; 2 green, 15 blue, 6 red; 3 green, 2 blue; 2 red, 1 green; 11 blue, 7 red, 4 green; 2 blue, 2 red, 4 green
      */
 
-    val lines = Files.readAllLines(Paths.get("/Users/vondracek/tmp/advent-of-code/day-02/input.txt"))
-
-    val bag = readBag(lines)
+    val bag = readBag()
 
     printBagTotals(bag)
 
@@ -41,7 +39,9 @@ private fun printBagTotals(bag: Bag) {
     println("")
 }
 
-private fun readBag(lines: MutableList<String>): Bag {
+private fun readBag(): Bag {
+    val lines = Files.readAllLines(Paths.get("/Users/vondracek/tmp/advent-of-code/day-02/input.txt"))
+
     val bag = Bag()
 
     lines.map { line ->
