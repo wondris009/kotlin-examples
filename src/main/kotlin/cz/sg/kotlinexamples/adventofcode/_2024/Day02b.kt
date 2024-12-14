@@ -18,7 +18,7 @@ fun main() {
         val isMainListOk = checkList(list)
 
         var isSubListsOk = false
-        if(!isMainListOk) {
+        if (!isMainListOk) {
             val sublistResult = mutableListOf<Boolean>()
             val subLists = createSubListWithOneRemovedElement(list)
             subLists.forEach { subList ->
@@ -28,7 +28,7 @@ fun main() {
             isSubListsOk = sublistResult.any { it }
         }
 
-        if(isMainListOk || isSubListsOk) {
+        if (isMainListOk || isSubListsOk) {
             result++
         }
     }
